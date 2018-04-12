@@ -1,2 +1,9 @@
 # Noiseless ground truth measurements
-sensor_processor/type: perfect
+sensor_processor/type: Perfect
+point_cloud_topic: "/camera/depth/points"
+map_frame_id: "odom"
+source_frame_id: "odom"
+robot_base_frame_id: "base_link"
+robot_pose_with_covariance_topic: "/pose"
+robot_pose_cache_size: 200
+track_point_frame_id: "base_link"
