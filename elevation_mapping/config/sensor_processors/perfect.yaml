@@ -3,6 +3,7 @@ sensor_processor/type: Perfect
 point_cloud_topic: "/camera/depth/points"
 map_frame_id: "odom"
 source_frame_id: "odom"
+fused_map_publishing_rate: 1.0
 robot_base_frame_id: "base_link"
 robot_pose_with_covariance_topic: "/pose"
 robot_pose_cache_size: 200
