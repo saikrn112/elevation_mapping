@@ -1,5 +1,5 @@
 # Noiseless ground truth measurements
-sensor_processor/type: Perfect
+sensor_processor/type: perfect
 point_cloud_topic: "/camera/depth/points"
 map_frame_id: "odom"
 source_frame_id: "odom"
