@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <launch>
   <node pkg="grid_map_visualization" type="grid_map_visualization" name="elevation_map_fused_visualization" output="screen">
    	<param name="grid_map_topic" value="/elevation_mapping/elevation_map" />
