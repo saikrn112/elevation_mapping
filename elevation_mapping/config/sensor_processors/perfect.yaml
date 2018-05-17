@@ -1,17 +1,17 @@
 # Noiseless ground truth measurements
 sensor_processor/type: Perfect
-#point_cloud_topic: "/zed/point_cloud/cloud_registered"
-# map_frame_id: "map"
-# source_frame_id: "map"
-# robot_base_frame_id: "zed_center"
-# robot_pose_with_covariance_topic: "/pose"
-# robot_pose_cache_size: 200
-# track_point_frame_id: "zed_center"
-
-point_cloud_topic: "/camera/depth/points"
-map_frame_id: "odom"
-source_frame_id: "base_link"
-robot_base_frame_id: "base_link"
+point_cloud_topic: "/zed/point_cloud/cloud_registered"
+map_frame_id: "map"
+source_frame_id: "map"
+robot_base_frame_id: "zed_center"
 robot_pose_with_covariance_topic: "/pose"
 robot_pose_cache_size: 200
-track_point_frame_id: "base_link"
+track_point_frame_id: "zed_center"
+
+# point_cloud_topic: "/camera/depth/points"
+# map_frame_id: "odom"
+# source_frame_id: "base_link"
+# robot_base_frame_id: "base_link"
+# robot_pose_with_covariance_topic: "/pose"
+# robot_pose_cache_size: 200
+# track_point_frame_id: "base_link"
