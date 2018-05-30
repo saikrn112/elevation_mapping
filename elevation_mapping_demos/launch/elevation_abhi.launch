@@ -1,4 +1,7 @@
 <launch>
+	<node pkg="tools" type="odom_to_pose" name="odom_to_pose">
+		<remap from="/odom" to="/zed/odom"/>
+	</node>
  	<node pkg="elevation_mapping" type="elevation_mapping" name="elevation_mapping" output="screen">
     	 <rosparam command="load" file="$(find elevation_mapping_demos)/config/elevation_maps/abhi.yaml" />
     </node>
