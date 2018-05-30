@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <launch>
 	<node pkg="tools" type="odom_to_pose" name="odom_to_pose">
-		<!-- <remap from="/odom" to="/zed/odom"/> -->
+		<remap from="/odom" to="/zed/odom"/>
 	</node>
  	<include file="$(find elevation_mapping_demos)/launch/ground_truth_demo.launch" />
  	<include file="$(find grid_map_demos)/launch/filters_demo.launch"/>

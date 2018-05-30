@@ -14,4 +14,13 @@ track_point_frame_id: "zed_center"
 # robot_base_frame_id: "base_link"
 # robot_pose_with_covariance_topic: "/pose"
 # robot_pose_cache_size: 200
-# track_point_frame_id: "base_link"
+# track_point_frame_id: "odom"
+
+# sensor_processor/type: Perfect
+# point_cloud_topic: "/firefly/vi_sensor/camera_depth/depth/points"
+# map_frame_id: "world"
+# source_frame_id: "firefly/vi_sensor/base_link"
+# robot_base_frame_id: "firefly/base_link"
+# robot_pose_with_covariance_topic: "/firefly/ground_truth/pose_with_covariance"
+# robot_pose_cache_size: 200
+# track_point_frame_id: "firefly/base_link"

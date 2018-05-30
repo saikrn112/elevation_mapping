@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<launch>
+	<!-- Sensors -->
+  <include file="$(find abhiyan_nav)/launch/Basic/Sensors.launch" />
+
+  <!-- ZED -->
+  <!-- <include file="$(find zed_wrapper)/launch/zed.launch" >
+    <arg name="resolution" value="2"/>
+    <arg name="fps" value="100"/>
+  </include> -->
+
+  <!-- Transforms -->
+  <include file="$(find abhiyan_nav)/launch/Basic/Transforms.launch"/>
+
+  <!-- Converter Odom to pose -->
+	<!-- <node pkg="tools" type="odom_to_pose" name="odom_to_pose">
+		<remap from="/odom" to="/odometry/filtered"/>
+	</node> -->
+
+	<!-- Elevation map -->
+ 	<!-- <include file="$(find elevation_mapping_demos)/launch/elevation_abhi.launch" /> -->
+
+ 	<!-- Fitlers -->
+ 	<!-- <include file="$(find grid_map_demos)/launch/filters_demo.launch"/> -->
+
+ 	<!-- Teleop -->
+	<!-- <include file="$(find teleop)/launch/kbd_teleop.launch" /> -->
+
+
+</launch>
