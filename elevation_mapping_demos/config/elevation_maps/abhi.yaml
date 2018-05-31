@@ -23,10 +23,10 @@ grid_map_visualizations:
 # track_point_y: 0.0
 # track_point_z: 0.0
 
-point_cloud_topic: "/camera/depth/points"
+point_cloud_topic: "/zed/depth/points"
 map_frame_id: "world"
-source_frame_id: "base_link"
-robot_base_frame_id: "base_link"
+source_frame_id: "quad/zed_viz"
+robot_base_frame_id: "quad/base_link"
 robot_pose_with_covariance_topic: "/quad/pose"
 robot_pose_cache_size: 200
 track_point_frame_id: "world"
