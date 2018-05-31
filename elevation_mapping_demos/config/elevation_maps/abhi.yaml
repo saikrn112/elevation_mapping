@@ -30,3 +30,16 @@ robot_base_frame_id: "quad/base_link"
 robot_pose_with_covariance_topic: "/quad/pose"
 robot_pose_cache_size: 200
 track_point_frame_id: "world"
+
+
+length_in_x: 15
+length_in_y: 15
+position_x: 0.0
+position_y: 0.0
+resolution: 0.05
+min_variance: 0.000009
+max_variance: 10000.0
+mahalanobis_distance_threshold: 2.5
+multi_height_noise: 0.0000009
+surface_normal_estimation_radius: 0.015
+surface_normal_positive_axis: z
