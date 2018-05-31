@@ -12,13 +12,21 @@ grid_map_visualizations:
      data_max: -0.16
 
 
-point_cloud_topic: "/zed/point_cloud/cloud_registered"
-robot_pose_with_covariance_topic: "/pose"
-robot_pose_cache_size: 500
-map_frame_id: "map"
-source_frame_id: "zed_center"
+# point_cloud_topic: "/zed/point_cloud/cloud_registered"
+# robot_pose_with_covariance_topic: "/pose"
+# robot_pose_cache_size: 500
+# map_frame_id: "map"
+# source_frame_id: "zed_center"
+# robot_base_frame_id: "base_link"
+# track_point_frame_id: "map"
+# track_point_x: 0.0
+# track_point_y: 0.0
+# track_point_z: 0.0
+
+point_cloud_topic: "/camera/depth/points"
+map_frame_id: "world"
+source_frame_id: "base_link"
 robot_base_frame_id: "base_link"
-track_point_frame_id: "map"
-track_point_x: 0.0
-track_point_y: 0.0
-track_point_z: 0.0
+robot_pose_with_covariance_topic: "/quad/pose"
+robot_pose_cache_size: 200
+track_point_frame_id: "world"
