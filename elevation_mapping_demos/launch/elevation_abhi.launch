@@ -1,10 +1,27 @@
 <launch>
-	<node pkg="tools" type="odom_to_pose" name="odom_to_pose">
+
+
+	<!-- <node pkg="tools" name="zed_odom_to_pose" type="odom_to_pose" >
 		<remap from="/odom" to="/zed/odom"/>
+		<remap from="/pose" to="/zed/pose"/>
 	</node>
- 	<node pkg="elevation_mapping" type="elevation_mapping" name="elevation_mapping" output="screen">
+
+	<node pkg="tools" name="ugv_odom_to_pose" type="odom_to_pose" >
+		<remap from="/odom" to="/kernel/odom"/>
+		<remap from="/pose" to="/kernel/pose"/>
+	</node> -->
+
+
+<!--   <node pkg="tools" name="mav_odom_to_pose" type="odom_to_pose">
+    <remap from="odom" to="/quad/ground_truth/state"/>
+    <remap from="pose" to="/quad/pose" />
+  </node> -->
+
+
+<!--  	<node pkg="elevation_mapping" type="elevation_mapping" name="elevation_mapping" output="screen">
     	 <rosparam command="load" file="$(find elevation_mapping_demos)/config/elevation_maps/abhi.yaml" />
     </node>
-	<include file="$(find grid_map_demos)/launch/filters_demo.launch"/>
+ -->
+ 	<include file="$(find grid_map_demos)/launch/filters_demo.launch"/>
 
 </launch>
