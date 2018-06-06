@@ -1,20 +1,20 @@
 # Noiseless ground truth measurements
-# sensor_processor/type: Perfect
-# point_cloud_topic: "/zed/point_cloud/cloud_registered"
-# map_frame_id: "map"
-# source_frame_id: "map"
-# robot_base_frame_id: "zed_center"
-# robot_pose_with_covariance_topic: "/pose"
-# robot_pose_cache_size: 200
-# track_point_frame_id: "zed_center"
-
-point_cloud_topic: "/zed/depth/points"
-map_frame_id: "world"
-source_frame_id: "quad/zed_viz"
-robot_base_frame_id: "quad/base_link"
-robot_pose_with_covariance_topic: "/quad/pose"
+sensor_processor/type: Perfect
+point_cloud_topic: "/zed/point_cloud/cloud_registered"
+map_frame_id: "map"
+source_frame_id: "map"
+robot_base_frame_id: "zed_center"
+robot_pose_with_covariance_topic: "/pose"
 robot_pose_cache_size: 200
-track_point_frame_id: "world"
+track_point_frame_id: "map"
+
+# point_cloud_topic: "/zed/depth/points"
+# map_frame_id: "world"
+# source_frame_id: "quad/zed_viz"
+# robot_base_frame_id: "quad/base_link"
+# robot_pose_with_covariance_topic: "/quad/pose"
+# robot_pose_cache_size: 200
+# track_point_frame_id: "world"
 
 # sensor_processor/type: Perfect
 # point_cloud_topic: "/firefly/vi_sensor/camera_depth/depth/points"
